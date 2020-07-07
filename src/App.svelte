@@ -45,13 +45,13 @@
 <div class='bg-gray-200 h-screen'>
 
     <header
-        class="py-3 text-center text-2xl bg-red-100 shadow-lg">
+        class="py-3 text-center text-2xl bg-red-100 shadow-md">
         <h1>Svelte Pomodoro Timer</h1>
     </header>
 
     <main
         class="flex flex-col justify-center items-center md:w-3/4 mx-auto mt-24 p-8
-        bg-red-100 rounded shadow-md ">
+        bg-red-100 md:rounded shadow-md ">
         <div class="text-6xl font-bold">{formatTimer(currentTime)}</div>
 
         <div class="space-y-4 flex flex-col">
@@ -75,22 +75,22 @@
 
             <div class="flex space-x-2">
                 <button
-                    class="px-3 py-1 bg-red-300 border-none rounded
-                    hover:bg-red-400 transition-all duration-100 ease-out"
+                    class="px-3 py-1 text-red-800 bg-red-200 rounded
+                    hover:bg-red-300 hover:text-red-900 transition-all duration-100 ease-out"
                     on:click={() => setTimer(DEFAULT_DURATION)}
                     type="button">
                     Pomodoro
                 </button>
                 <button
-                    class="px-3 py-1 bg-red-300 border-none rounded
-                    hover:bg-red-400 transition-all duration-100 ease-out"
+                    class="px-3 py-1 text-red-800 bg-red-200 rounded
+                    hover:bg-red-300 hover:text-red-900 transition-all duration-100 ease-out"
                     on:click={() => setTimer(SHORT_BREAK_DURATION)}
                     type="button">
                     Short Break
                 </button>
                 <button
-                    class="px-3 py-1 bg-red-300 border-none rounded
-                    hover:bg-red-400 transition-all duration-100 ease-out"
+                    class="px-3 py-1 text-red-800 bg-red-200 rounded
+                    hover:bg-red-300 hover:text-red-900 transition-all duration-100 ease-out"
                     on:click={() => setTimer(LONG_BREAK_DURATION)}
                     type="button">
                     Long Break
@@ -98,7 +98,7 @@
             </div>
         </div>
     </main>
-    <footer class='mx-auto text-center text-sm text-gray-800 p-6 mt-8 md:w-1/2 rounded bg-gray-100 shadow'>
+    <footer class='mx-auto text-center text-sm text-gray-800 p-6 mt-24 md:w-3/4 md:rounded bg-gray-100 shadow'>
         Designed and Developed by Austin Crim
     </footer>
 </div>
